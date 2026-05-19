@@ -1,0 +1,23 @@
+// Vocabulary data — English word + correct meaning + 3 distractors
+window.VOCAB_DATA = [
+  { word: "abandon",    correct: "見捨てる",       choices: ["見捨てる", "称賛する", "修理する", "覚える"] },
+  { word: "brilliant",  correct: "素晴らしい",     choices: ["退屈な", "素晴らしい", "危険な", "静かな"] },
+  { word: "curious",    correct: "好奇心旺盛な",   choices: ["怠惰な", "親切な", "好奇心旺盛な", "怒った"] },
+  { word: "diligent",   correct: "勤勉な",         choices: ["勤勉な", "無関心な", "陽気な", "臆病な"] },
+  { word: "eager",      correct: "熱心な",         choices: ["疲れた", "熱心な", "悲しい", "混乱した"] },
+  { word: "fragile",    correct: "壊れやすい",     choices: ["頑丈な", "柔らかい", "壊れやすい", "重い"] },
+  { word: "genuine",    correct: "本物の",         choices: ["偽物の", "古い", "本物の", "高価な"] },
+  { word: "humble",     correct: "謙虚な",         choices: ["傲慢な", "謙虚な", "愉快な", "無口な"] },
+  { word: "ignite",     correct: "点火する",       choices: ["消す", "点火する", "冷やす", "蒸発させる"] },
+  { word: "jovial",     correct: "陽気な",         choices: ["陽気な", "厳格な", "内気な", "怒りっぽい"] },
+  { word: "keen",       correct: "鋭い",           choices: ["鈍い", "鋭い", "柔らかい", "浅い"] },
+  { word: "lucid",      correct: "明晰な",         choices: ["曖昧な", "騒々しい", "明晰な", "退屈な"] },
+  { word: "mundane",    correct: "平凡な",         choices: ["平凡な", "特別な", "奇妙な", "複雑な"] },
+  { word: "novel",      correct: "斬新な",         choices: ["古風な", "退屈な", "斬新な", "誠実な"] },
+  { word: "obscure",    correct: "不明瞭な",       choices: ["明瞭な", "有名な", "不明瞭な", "正確な"] },
+  { word: "pristine",   correct: "新品同様の",     choices: ["汚れた", "新品同様の", "破損した", "古い"] },
+  { word: "quaint",     correct: "趣のある",       choices: ["現代的な", "趣のある", "不快な", "巨大な"] },
+  { word: "robust",     correct: "頑丈な",         choices: ["脆い", "頑丈な", "薄い", "軽い"] },
+  { word: "serene",     correct: "穏やかな",       choices: ["騒がしい", "穏やかな", "激しい", "忙しい"] },
+  { word: "tedious",    correct: "退屈な",         choices: ["興奮する", "退屈な", "難しい", "簡単な"] },
+];
