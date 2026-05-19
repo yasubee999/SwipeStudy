@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8"/>
-<title>SwipeWords — 単語学習</title>
+<title>SwipeStudy — スワイプ暗記</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <link rel="manifest" href="manifest.json"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-<meta name="apple-mobile-web-app-title" content="SwipeWords"/>
+<meta name="apple-mobile-web-app-title" content="SwipeStudy"/>
 <link rel="apple-touch-icon" href="icon.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -3868,8 +3868,8 @@ function TitleMode({ vocabData, csvFileName, onStart, onCsvSwitch, variant }) {
     <div className={`vocab-app variant-${variant?.id||'bubble'}`}>
       {swVersion && <div style={{position:'absolute',top:10,right:14,zIndex:20,fontSize:10,fontWeight:700,opacity:0.25,letterSpacing:'0.05em',pointerEvents:'none'}}>{swVersion}</div>}
       <div className="title-screen">
-        <div className="title-badge">英単語学習アプリ</div>
-        <h1 className="title-h1">Swipe<span className="title-accent">.</span><br/><span className="title-accent">Words</span></h1>
+        <div className="title-badge">スワイプ暗記アプリ</div>
+        <h1 className="title-h1">Swipe<span className="title-accent">.</span><br/><span className="title-accent">Study</span></h1>
         <div className="title-tagline">{(wordStats?.total ?? vocabData?.length ?? 0).toLocaleString()}問収録 · スワイプで4択 · コンボを稼げ</div>
 
         <div className="title-preview-card">
@@ -4066,7 +4066,7 @@ function App() {
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8' });
     const file = new File([blob], `swipewords_${fmtDate(new Date())}.csv`, { type: 'text/csv' });
     if (navigator.canShare?.({ files: [file] })) {
-      await navigator.share({ files: [file], title: 'SwipeWords 結果' });
+      await navigator.share({ files: [file], title: 'SwipeStudy 結果' });
     } else {
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
@@ -4129,7 +4129,7 @@ function App() {
       )}
       {view === 'compare' ? (
         <div className="variant-showcase">
-          <div className="variant-showcase-header"><h1>SwipeWords</h1><p>スタイルを比較</p></div>
+          <div className="variant-showcase-header"><h1>SwipeStudy</h1><p>スタイルを比較</p></div>
           <div className="variant-showcase-grid">
             {Object.values(VARIANTS).map(v => (
               <div className="variant-col" key={v.id}>

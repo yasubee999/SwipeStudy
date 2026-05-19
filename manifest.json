@@ -1,6 +1,6 @@
 {
-  "name": "SwipeWords — 単語学習",
-  "short_name": "SwipeWords",
+  "name": "SwipeStudy — スワイプ暗記",
+  "short_name": "SwipeStudy",
   "start_url": "/SwipeWords.html",
   "display": "standalone",
   "background_color": "#111111",

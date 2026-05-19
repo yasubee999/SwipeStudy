@@ -1,4 +1,4 @@
-const CACHE = 'swipewords-v128';
+const CACHE = 'swipestudy-v1';
 const ASSETS = [
   'SwipeWords.html', 'manifest.json', 'icon.svg', 'vocab_sample.csv',
   // 単語帳リスト
